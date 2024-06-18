@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobTrackerAPI", "JobTrackerAPI\JobTrackerAPI.csproj", "{4793ADF4-C495-447D-89C9-6A18AF0AFC45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D4FF6935-8D0D-45BF-8BEE-60298CA9AF9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4793ADF4-C495-447D-89C9-6A18AF0AFC45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4793ADF4-C495-447D-89C9-6A18AF0AFC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4793ADF4-C495-447D-89C9-6A18AF0AFC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4793ADF4-C495-447D-89C9-6A18AF0AFC45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
