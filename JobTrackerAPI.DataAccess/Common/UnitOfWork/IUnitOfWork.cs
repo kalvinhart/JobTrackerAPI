@@ -5,5 +5,5 @@ namespace JobTrackerAPI.DataAccess.Common.UnitOfWork;
 public interface IUnitOfWork
 {
     Task<int> SaveChangesAsync();
-    IJobsRepository JobsRepository { get; }
+    IJobsRepository Jobs { get; }
 }

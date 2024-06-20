@@ -1,3 +1,4 @@
+using JobTrackerAPI.Business;
 using JobTrackerAPI.DataAccess;
 using JobTrackerAPI.Extensions;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ builder.Services.AddDbContext<JobTrackerDbContext>(opts => opts.UseSqlServer(con
 
 builder.Services.AddIdentityAuthentication();
 
+builder.Services.AddBusinessLayer();
 builder.Services.AddDataLayer();
 
 builder.Services.AddControllers();

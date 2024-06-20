@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobTrackerAPI.DataAccess", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobTrackerAPI.Business", "JobTrackerAPI.Business\JobTrackerAPI.Business.csproj", "{C8C3115F-8F3A-48B7-BB68-70B3DCBD68F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobTrackerAPI.Business.Tests", "JobTrackerAPI.Business.Tests\JobTrackerAPI.Business.Tests.csproj", "{B22FBD84-D930-420A-B05B-CE0CCF1F1D5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,5 +31,11 @@ Global
 		{C8C3115F-8F3A-48B7-BB68-70B3DCBD68F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8C3115F-8F3A-48B7-BB68-70B3DCBD68F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8C3115F-8F3A-48B7-BB68-70B3DCBD68F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B22FBD84-D930-420A-B05B-CE0CCF1F1D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B22FBD84-D930-420A-B05B-CE0CCF1F1D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B22FBD84-D930-420A-B05B-CE0CCF1F1D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B22FBD84-D930-420A-B05B-CE0CCF1F1D5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal

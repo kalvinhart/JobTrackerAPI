@@ -6,12 +6,12 @@ public class UnitOfWork : IUnitOfWork, IDisposable
 {
     private readonly JobTrackerDbContext _context;
 
-    public IJobsRepository JobsRepository { get; }
+    public IJobsRepository Jobs { get; }
 
     public UnitOfWork(JobTrackerDbContext context)
     {
         _context = context;
-        JobsRepository = new JobsRepository(context);
+        Jobs = new JobsRepository(context);
     }
 
     public async Task<int> SaveChangesAsync()
