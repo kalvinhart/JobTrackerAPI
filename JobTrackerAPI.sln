@@ -3,6 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobTrackerAPI", "JobTrackerAPI\JobTrackerAPI.csproj", "{4793ADF4-C495-447D-89C9-6A18AF0AFC45}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D4FF6935-8D0D-45BF-8BEE-60298CA9AF9E}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobTrackerAPI.DataAccess", "JobTrackerAPI.DataAccess\JobTrackerAPI.DataAccess.csproj", "{FBB2DEC3-3177-4EDF-B620-AF77475DBEEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobTrackerAPI.Business", "JobTrackerAPI.Business\JobTrackerAPI.Business.csproj", "{C8C3115F-8F3A-48B7-BB68-70B3DCBD68F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,5 +21,13 @@ Global
 		{4793ADF4-C495-447D-89C9-6A18AF0AFC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4793ADF4-C495-447D-89C9-6A18AF0AFC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4793ADF4-C495-447D-89C9-6A18AF0AFC45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBB2DEC3-3177-4EDF-B620-AF77475DBEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB2DEC3-3177-4EDF-B620-AF77475DBEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB2DEC3-3177-4EDF-B620-AF77475DBEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB2DEC3-3177-4EDF-B620-AF77475DBEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8C3115F-8F3A-48B7-BB68-70B3DCBD68F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8C3115F-8F3A-48B7-BB68-70B3DCBD68F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8C3115F-8F3A-48B7-BB68-70B3DCBD68F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8C3115F-8F3A-48B7-BB68-70B3DCBD68F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
