@@ -1,5 +1,4 @@
-﻿using JobTrackerAPI.Business.Interviews;
-using JobTrackerAPI.Business.Interviews.DTOs;
+﻿using JobTrackerAPI.Business.Interviews.DTOs;
 using JobTrackerAPI.DataAccess.Jobs.Enums;
 
 namespace JobTrackerAPI.Business.Jobs.DTOs;
@@ -9,6 +8,7 @@ public record JobDto(
     string Title,
     string Location,
     ApplicationStatus Status,
+    Guid UserId,
     string? Description,
     int? SalaryStart,
     int? SalaryEnd,

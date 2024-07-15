@@ -28,6 +28,7 @@ public class GetAllJobsQueryTests
     public async Task GetAllJobsQuery_ShouldReturnJobs()
     {
         // Arrange
+        var userId = Guid.NewGuid();
         var query = new GetAllJobsQuery();
         List<Job> jobs = [
             new Job
@@ -39,7 +40,8 @@ public class GetAllJobsQueryTests
                 SalaryStart = 1000,
                 SalaryEnd = 2000,
                 ContactName = "Test Contact 1",
-                Status = ApplicationStatus.Pending
+                Status = ApplicationStatus.Pending,
+                UserId = userId
             },
             new Job
             {
@@ -50,7 +52,8 @@ public class GetAllJobsQueryTests
                 SalaryStart = 3000,
                 SalaryEnd = 4000,
                 ContactName = "Test Contact 2",
-                Status = ApplicationStatus.Interviewing
+                Status = ApplicationStatus.Interviewing,
+                UserId = userId
             }
         ];
 
@@ -73,6 +76,7 @@ public class GetAllJobsQueryTests
                 Assert.That(result[0].SalaryEnd, Is.EqualTo(2000));
                 Assert.That(result[0].ContactName, Is.EqualTo("Test Contact 1"));
                 Assert.That(result[0].Status, Is.EqualTo(ApplicationStatus.Pending));
+                Assert.That(result[0].UserId, Is.EqualTo(userId));
 
                 Assert.That(result[1].Title, Is.EqualTo("Test Job 2"));
                 Assert.That(result[1].Location, Is.EqualTo("Test Location 2"));
@@ -81,6 +85,7 @@ public class GetAllJobsQueryTests
                 Assert.That(result[1].SalaryEnd, Is.EqualTo(4000));
                 Assert.That(result[1].ContactName, Is.EqualTo("Test Contact 2"));
                 Assert.That(result[1].Status, Is.EqualTo(ApplicationStatus.Interviewing));
+                Assert.That(result[1].UserId, Is.EqualTo(userId));
             });
     }
 

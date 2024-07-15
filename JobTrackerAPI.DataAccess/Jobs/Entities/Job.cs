@@ -14,6 +14,7 @@ public class Job : Auditable
     public int? SalaryEnd { get; set; }
     public string? ContactName { get; set; }
     public ApplicationStatus Status { get; set; }
+    public required Guid UserId { get; set; }
 
-    public ICollection<Interview> Interviews { get; set; } = new List<Interview>();
+    public ICollection<Interview>? Interviews { get; set; }
 }
