@@ -1,28 +1,28 @@
 ﻿services:
-  jobtracker.api:
-    image: jobtracker.api
+  api:
+    image: api
     build:
       context: .
       dockerfile: JobTrackerAPI/Dockerfile
     depends_on:
-      - jobtracker.db
+      - database
     ports:
       - 8080:8080
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-
-  jobtracker.db:
-    image: "mcr.microsoft.com/mssql/server"
-    user: root
+  
+  database:
+    image: postgres:15
+    container_name: database
+    restart: unless-stopped
     environment:
-      MSSQL_SA_PASSWORD: "Test99999@"
-      ACCEPT_EULA: "Y"
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=jobs
     ports:
-      - "1433:1433"
+      - "5432:5432"
     volumes:
-      - jobtracker-data:/var/opt/mssql/data
-      - jobtracker-log:/var/opt/mssql/log
-
+      - pgdata:/var/lib/postgresql/data
+  
 volumes:
-  jobtracker-data:
-  jobtracker-log:
+  pgdata:

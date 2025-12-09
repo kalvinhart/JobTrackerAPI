@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<JobTrackerDbContext>(opts => opts.UseSqlServer(connectionString));
+builder.Services.AddDbContext<JobTrackerDbContext>(opts => opts.UseNpgsql(connectionString));
 
 builder.Services.AddIdentityAuthentication();
 

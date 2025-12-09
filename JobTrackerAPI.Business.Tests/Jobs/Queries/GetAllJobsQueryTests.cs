@@ -88,5 +88,4 @@ public class GetAllJobsQueryTests
                 Assert.That(result[1].UserId, Is.EqualTo(userId));
             });
     }
-
 }
