@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobTrackerAPI", "JobTrackerAPI\JobTrackerAPI.csproj", "{4793ADF4-C495-447D-89C9-6A18AF0AFC45}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D4FF6935-8D0D-45BF-8BEE-60298CA9AF9E}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobTrackerAPI.DataAccess", "JobTrackerAPI.DataAccess\JobTrackerAPI.DataAccess.csproj", "{FBB2DEC3-3177-4EDF-B620-AF77475DBEEC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{05CC4ED1-6FB9-40EB-8926-4009B03F30FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobTrackerAPI.Business", "JobTrackerAPI.Business\JobTrackerAPI.Business.csproj", "{C8C3115F-8F3A-48B7-BB68-70B3DCBD68F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{C4CD7A56-9C74-4CA5-9016-3DAB9D1573B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobTrackerAPI.Business.Tests", "JobTrackerAPI.Business.Tests\JobTrackerAPI.Business.Tests.csproj", "{B22FBD84-D930-420A-B05B-CE0CCF1F1D5A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{E838055A-30DE-40F8-81FD-AF1223E66C62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{40F16352-054F-417C-A4B8-9A907FB8EA56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,22 +19,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4793ADF4-C495-447D-89C9-6A18AF0AFC45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4793ADF4-C495-447D-89C9-6A18AF0AFC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4793ADF4-C495-447D-89C9-6A18AF0AFC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4793ADF4-C495-447D-89C9-6A18AF0AFC45}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FBB2DEC3-3177-4EDF-B620-AF77475DBEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FBB2DEC3-3177-4EDF-B620-AF77475DBEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FBB2DEC3-3177-4EDF-B620-AF77475DBEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FBB2DEC3-3177-4EDF-B620-AF77475DBEEC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C8C3115F-8F3A-48B7-BB68-70B3DCBD68F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8C3115F-8F3A-48B7-BB68-70B3DCBD68F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8C3115F-8F3A-48B7-BB68-70B3DCBD68F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8C3115F-8F3A-48B7-BB68-70B3DCBD68F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B22FBD84-D930-420A-B05B-CE0CCF1F1D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B22FBD84-D930-420A-B05B-CE0CCF1F1D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B22FBD84-D930-420A-B05B-CE0CCF1F1D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B22FBD84-D930-420A-B05B-CE0CCF1F1D5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05CC4ED1-6FB9-40EB-8926-4009B03F30FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05CC4ED1-6FB9-40EB-8926-4009B03F30FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05CC4ED1-6FB9-40EB-8926-4009B03F30FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05CC4ED1-6FB9-40EB-8926-4009B03F30FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4CD7A56-9C74-4CA5-9016-3DAB9D1573B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4CD7A56-9C74-4CA5-9016-3DAB9D1573B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4CD7A56-9C74-4CA5-9016-3DAB9D1573B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4CD7A56-9C74-4CA5-9016-3DAB9D1573B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E838055A-30DE-40F8-81FD-AF1223E66C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E838055A-30DE-40F8-81FD-AF1223E66C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E838055A-30DE-40F8-81FD-AF1223E66C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E838055A-30DE-40F8-81FD-AF1223E66C62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40F16352-054F-417C-A4B8-9A907FB8EA56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40F16352-054F-417C-A4B8-9A907FB8EA56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40F16352-054F-417C-A4B8-9A907FB8EA56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40F16352-054F-417C-A4B8-9A907FB8EA56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection

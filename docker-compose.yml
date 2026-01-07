@@ -1,16 +1,4 @@
 ﻿services:
-  api:
-    image: api
-    build:
-      context: .
-      dockerfile: JobTrackerAPI/Dockerfile
-    depends_on:
-      - database
-    ports:
-      - 8080:8080
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-  
   database:
     image: postgres:15
     container_name: database
@@ -23,6 +11,18 @@
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
+        
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    restart: unless-stopped
+    ports:
+      - "5050:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    depends_on:
+      - database
   
 volumes:
   pgdata:
